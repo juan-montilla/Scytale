@@ -1,0 +1,54 @@
+{
+    "name": "juan-montilla/scytale",
+    "description": "Encryptable and Hasheable Model Attributes",
+    "keywords": [
+        "juan-montilla",
+        "scytale"
+    ],
+    "homepage": "https://github.com/juan-montilla/scytale",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "vzlahagen",
+            "email": "juan.carlos.montilla@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "^6.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JuanMontilla\\Scytale\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JuanMontilla\\Scytale\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JuanMontilla\\Scytale\\ScytaleServiceProvider"
+            ],
+            "aliases": {
+                "Scytale": "JuanMontilla\\Scytale\\ScytaleFacade"
+            }
+        }
+    }
+}
