@@ -1,6 +1,6 @@
 {
     "name": "juan-montilla/scytale",
-    "description": "Encryptable and Hasheable Model Attributes. A fork from ",
+    "description": "Encryptable and Hasheable Model Attributes. A fork from https://github.com/betterapp/laravel-db-encrypter",
     "keywords": [
         "juan-montilla",
         "scytale"
