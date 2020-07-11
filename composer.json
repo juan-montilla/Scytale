@@ -1,6 +1,6 @@
 {
     "name": "juan-montilla/scytale",
-    "description": "Encryptable and Hasheable Model Attributes",
+    "description": "Encryptable and Hasheable Model Attributes. A fork from ",
     "keywords": [
         "juan-montilla",
         "scytale"
@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "JuanMontilla\\Scytale\\": "src"
+            "OdoSha\\Scytale\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "JuanMontilla\\Scytale\\Tests\\": "tests"
+            "OdoSha\\Scytale\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,11 +44,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "JuanMontilla\\Scytale\\ScytaleServiceProvider"
-            ],
-            "aliases": {
-                "Scytale": "JuanMontilla\\Scytale\\ScytaleFacade"
-            }
+                "OdoSha\\Scytale\\ScytaleServiceProvider"
+            ]
         }
     }
 }
